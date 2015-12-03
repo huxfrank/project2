@@ -14,6 +14,7 @@ def main():
 	#iterate through all target IPs and probe
 	for target in targets:
 		results = probe(target)
+		print results
 		#write results to files if a response is found
 		if results is not None:
 			result_str = "Host: {}\nHops: {}\nRTT: {} ms\n{}".format(target, results[0],results[1], results[2])
