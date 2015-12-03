@@ -11,14 +11,11 @@ def main():
 	
 	for target in targets:
 		results = probe(target)
-		print results
 		if results is not None:
 			result_str = "Host: {}\nHops: {}\nRTT: {} ms\n{}".format(target, results[0],results[1], results[2])
-			print result_str
 			output.write(result_str + "\n")
-			output.write("%s\t%d\t%d\n" % (results[0],results[1],results[2]))
-		else:
-			output.write("{} timed out" + "\n")
+		else: 
+			output.write("{} timed out".format(target) + "\n\n")
 
 	output.close()
 #	graph_results()
@@ -29,8 +26,8 @@ def graph_results():
 	rtt = []
 	for line in data:
 		split = line.split('\t')
-		hops.append(split[0])
-		rtt.append(split[1])
+		hops.append(hdata)
+		rtt.append(rttdata)
 
 	mplot.plot(hops,rtt)
 	mplot.grid(color='b',linestyle='-', linewidth=1)
@@ -43,7 +40,7 @@ def graph_results():
 def probe(target):
 
 	timeout = 3.0
-	ttl_current = 32
+	ttl_current = 16
 	ttl_top = 0
 	ttl_bot = 0
 	maxed_out = False
@@ -125,7 +122,7 @@ def probe(target):
 			ip_target = inet_ntoa(struct.pack('!L',ip_long))
 			port_target = struct.unpack("!H",rec_packet[50:52])[0]
 			if(ip_target == target and port_target == port):
-				addr_target = "Target IP: {} and Port {} are valid. \n".format(ip_target,port_target)
+				addr_target = "Target IP: {} Port {}. \n".format(ip_target,port_target)
 			else: addr_target = "Target IP and Port were not valid."
 			
 			return hops,rtt,addr_target
