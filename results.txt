@@ -2,28 +2,37 @@
 
 Host: 72.11.144.120
 Hops: 2
-RTT: 57.284116745 ms
-Target IP: 72.11.144.120 Port 320. 
+RTT: 57.088136673 ms
+Target IP: 72.11.144.120 Port 33435. 
 
 88.208.24.59 timed out
 
 Host: 193.141.43.158
 Hops: 2
-RTT: 103.784799576 ms
-Target IP: 193.141.43.158 Port 320. 
+RTT: 106.583118439 ms
+Target IP: 193.141.43.158 Port 33435. 
 
 74.82.53.10 timed out
 
-198.41.209.138 timed out
+Host: 198.41.209.138
+Hops: 2
+RTT: 56.1139583588 ms
+Target IP: 198.41.209.138 Port 33435. 
 
-74.208.191.55 timed out
+Host: 74.208.191.55
+Hops: 2
+RTT: 60.1072311401 ms
+Target IP: 74.208.191.55 Port 33435. 
 
-72.21.91.127 timed out
+Host: 72.21.91.127
+Hops: 2
+RTT: 19.3650722504 ms
+Target IP: 72.21.91.127 Port 33435. 
 
 Host: 205.186.136.43
 Hops: 2
-RTT: 23.9369869232 ms
-Target IP: 205.186.136.43 Port 320. 
+RTT: 23.4570503235 ms
+Target IP: 205.186.136.43 Port 33435. 
 
 97.107.130.30 timed out
 
