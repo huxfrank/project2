@@ -27,7 +27,7 @@ def main():
 
 	output.close()
 	graph.close()
-	graph_results()
+	#graph_results()
 
 #Graph via mpl
 def graph_results():
@@ -48,7 +48,7 @@ def graph_results():
 	ymin,ymax = mplot.ylim()
 	mplot.xlim((xmin-1,xmax+1))
 	mplot.ylim((ymin-5,ymax+5))
-	#mplot.show()
+	mplot.show()
 	
 #a single trace UDP probe
 def probe(target):
