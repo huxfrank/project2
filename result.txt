@@ -1,0 +1,36 @@
+Name: Andrew Hwang
+EECS 325 Project 2
+
+Host: cnn.com
+Host timed out.
+
+Host: capitalone.com
+Host timed out.
+
+Host: cbs.com
+Host timed out.
+
+Host: china.com
+Host timed out.
+
+Host: ehow.com
+Host timed out.
+
+Host: gismeteo.ru
+Host timed out.
+
+Host: kickstarter.com
+Host timed out.
+
+Host: nbcnews.com
+Host timed out.
+
+Host: themeforest.com
+Host timed out.
+
+Host: tmz.com
+Host timed out.
+
+Host: yahoo.com
+Host timed out.
+
